@@ -2,12 +2,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// librairie pour asembler des noms de classes conditionnellement
+import classNames from 'classNames';
+
 // == Composant
 const Task = ({ id, label, done }) => {
-  let classCss = 'task';
-  if (done) {
-    classCss += 'task--done';
-  }
+  const classCss = classNames('task', { 'task--done': done });
 
   return (
     <li className={classCss}>
