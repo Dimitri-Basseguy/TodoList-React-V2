@@ -1,0 +1,24 @@
+.task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em;
+    height: 80px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #240229;
+    background-color: rgb(242, 6, 250);
+}
+
+.task--done {
+    background-color: #350672;
+    text-decoration: line-through;
+    color: rgba(247, 0, 255, 0.39);
+}
+
+.checkbox {
+    font-size: 1em;
+    margin-right: 1rem;
+}
