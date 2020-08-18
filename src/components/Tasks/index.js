@@ -9,8 +9,8 @@ import './tasks.scss';
 // == Composant
 const Tasks = () => (
   <ul>
-    <Task label="Do somethings" done />
-    <Task label="Do nothings" done={false} />
+    <Task id={1} label="Do somethings" done />
+    <Task id={2} label="Do nothings" done={false} />
   </ul>
 );
 

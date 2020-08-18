@@ -8,11 +8,17 @@ import classNames from 'classNames';
 // == Composant
 const Task = ({ id, label, done }) => {
   const classCss = classNames('task', { 'task--done': done });
+  const checkboxId = `checkbox-${id}`;
 
   return (
     <li className={classCss}>
-      <input className="checkbox" type="checkbox" checked={done} />
-      <label>{label}</label>
+      <input
+        className="checkbox"
+        type="checkbox"
+        checked={done}
+        id={checkboxId}
+      />
+      <label htmlFor={checkboxId}>{label}</label>
     </li>
   );
 };
