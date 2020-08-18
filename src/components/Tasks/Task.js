@@ -25,8 +25,12 @@ const Task = ({ id, label, done }) => {
 
 Task.propTypes = {
   id: PropTypes.number.isRequired,
-  done: PropTypes.bool.isRequired,
   label: PropTypes.string.isRequired,
+  done: PropTypes.bool,
+};
+
+Task.defaultProps = {
+  done: false,
 };
 
 export default Task;

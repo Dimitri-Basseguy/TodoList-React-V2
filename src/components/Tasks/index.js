@@ -10,7 +10,7 @@ import './tasks.scss';
 const Tasks = () => (
   <ul>
     <Task id={1} label="Do somethings" done />
-    <Task id={2} label="Do nothings" done={false} />
+    <Task id={2} label="Do nothings" />
   </ul>
 );
 

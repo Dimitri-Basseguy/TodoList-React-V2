@@ -9,6 +9,7 @@ import './app.scss';
 
 // == Composant
 const App = () => (
+  // <h1>Simple Todo-List React</h1>
   <div className="todo">
     <Form />
     <Counter nbTasks={2} />
