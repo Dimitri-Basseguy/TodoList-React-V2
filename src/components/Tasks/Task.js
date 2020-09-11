@@ -3,10 +3,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // librairie pour asembler des noms de classes conditionnellement
-import classNames from 'classNames';
+import classNames from 'classnames';
 
 // == Composant
 const Task = ({ id, label, done }) => {
+  // en utilisant la librairie classnames
   const classCss = classNames('task', { 'task--done': done });
   const checkboxId = `checkbox-${id}`;
 

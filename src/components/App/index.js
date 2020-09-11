@@ -5,6 +5,10 @@ import React from 'react';
 import Counter from 'src/components/Counter';
 import Form from 'src/components/Form';
 import Tasks from 'src/components/Tasks';
+
+// import des données
+import initialTask from 'src/data/tasks';
+
 import './app.scss';
 
 // == Composant
@@ -13,7 +17,7 @@ const App = () => (
   <div className="todo">
     <Form />
     <Counter nbTasks={2} />
-    <Tasks />
+    <Tasks tasks={initialTask} />
   </div>
 );
 
