@@ -7,12 +7,12 @@ import Task from './Task';
 import './tasks.scss';
 
 // == Composant
-const Tasks = ( {tasks} ) => (
+const Tasks = ({ tasks }) => (
   <ul>
     {tasks.map((task) => (
       <Task
         key={task.id}
-        // enveloppe -> deverse toutes les données du tableau task
+        // enveloppe -> déverse toutes les données de la task
         // si nouveau éléments les ajouter dans task.js !
         {...task}
       />
