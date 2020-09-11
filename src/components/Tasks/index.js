@@ -10,7 +10,12 @@ import './tasks.scss';
 const Tasks = ( {tasks} ) => (
   <ul>
     {tasks.map((task) => (
-      <Task key={task.id} id={task.id} label={task.label} done={task.done} />
+      <Task
+        key={task.id}
+        // enveloppe -> deverse toutes les données du tableau task
+        // si nouveau éléments les ajouter dans task.js !
+        {...task}
+      />
     ))}
   </ul>
 );
@@ -21,8 +26,6 @@ Tasks.propTypes = {
   tasks: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
-      label: PropTypes.string.isRequired,
-      done: PropTypes.bool.isRequired,
     }).isRequired,
   ).isRequired,
 };
