@@ -28,6 +28,7 @@ Task.propTypes = {
   id: PropTypes.number.isRequired,
   label: PropTypes.string.isRequired,
   done: PropTypes.bool,
+  // favorite: ....
 };
 
 Task.defaultProps = {

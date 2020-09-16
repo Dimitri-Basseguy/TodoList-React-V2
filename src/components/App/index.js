@@ -23,11 +23,20 @@ const App = () => {
   // Version racourcie
   // const nbTasksNotDone = initialTasks.filter((task) => !task.done).length;
 
+  const addTask = () => {
+    console.log('ajout d\'une tâche');
+  };
+
   return (
     <div className="todo">
-      <Form />
+      <h1 className="bg-header">Liste de tâches</h1>
+      <Form addTask={addTask} />
       <Counter nbTasks={nbTasksNotDone} />
       <Tasks tasks={initialTasks} />
+      <footer className="footer">
+        <img src="https://dimitri-basseguy.github.io/assets/img/portrait-web.jpg" alt="me" />
+        <p>Made by <a href="https://dimitri-basseguy.github.io" target="_blank" rel="noopener noreferrer">Dimitri Basseguy</a></p>
+      </footer>
     </div>
   );
 };

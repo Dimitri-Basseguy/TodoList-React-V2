@@ -1,4 +1,49 @@
 .todo {
-    width: 500px;
-    margin: auto;
+  width: 60vw;
+  margin: auto;
+}
+
+.bg-header {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: seashell;
+  background-image: url(https://news.itu.int/wp-content/uploads/2017/05/smartdigital.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  -webkit-box-shadow: 0px 43px 24px -38px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 43px 24px -38px rgba(0,0,0,0.75);
+  box-shadow: 0px 43px 24px -38px rgba(0,0,0,0.75);
+}
+
+.footer {
+  text-align: center;
+  margin: 4rem;
+  color: aquamarine;
+  
+  & > img {
+    margin: 1rem;
+    width: 70px;
+    border-radius: 2px 8px 2px 8px;
+    -moz-border-radius: 2px 8px 2px 8px;
+    -webkit-border-radius: 2px 8px 2px 8px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 4px 4px 0px 0px rgb(242, 6, 250);
+    -moz-box-shadow: 4px 4px 0px 0px rgb(242, 6, 250);
+    box-shadow: 4px 4px 0px 0px rgb(242, 6, 250);
   }
+
+  & a {
+    transition: color 0.5s ease;
+    text-decoration-line: underline;
+  }
+
+  & a:hover {
+    color: rgb(242, 6, 250);
+  }
+}

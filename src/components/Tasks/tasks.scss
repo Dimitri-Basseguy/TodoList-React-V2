@@ -2,20 +2,36 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 1em;
-    height: 80px;
+    padding: .2em;
+    height: auto;
     border-radius: 5px;
-    font-size: 1.5em;
+    font-size: 1em;
     margin-bottom: 1rem;
     margin-top: 1rem;
     color: #240229;
+    transition: background-color 0.5s ease;
+    transition: transform 0.2s ease;
     background-color: rgb(242, 6, 250);
+
+    &:hover {
+        background-color: cyan;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
 }
 
 .task--done {
     background-color: #350672;
     text-decoration: line-through;
     color: rgba(247, 0, 255, 0.39);
+
+    &:hover {
+        background-color: greenyellow;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
 }
 
 .checkbox {
