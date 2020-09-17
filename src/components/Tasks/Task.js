@@ -12,7 +12,7 @@ const Task = ({ id, label, done }) => {
   const checkboxId = `checkbox-${id}`;
 
   return (
-    <li className={classCss}>
+    <li className={classCss} control>
       <input
         className="checkbox"
         type="checkbox"

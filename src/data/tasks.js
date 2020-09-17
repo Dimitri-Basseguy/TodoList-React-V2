@@ -1,22 +1,22 @@
 export default [
   {
     id: 1,
-    label: 'Coder une todolist en impératif',
+    label: 'Learn magic',
     done: true,
   },
   {
     id: 13,
-    label: 'Coder une todolist en React',
+    label: 'Cast my first spell',
     done: false,
   },
   {
     id: 4,
-    label: 'Appeler Jean-Marc',
+    label: 'summon a minion',
     done: false,
   },
   {
     id: 8,
-    label: 'Préparer des crêpes',
+    label: 'Learn elementary magic',
     done: false,
   },
 ];

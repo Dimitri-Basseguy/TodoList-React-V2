@@ -2,39 +2,54 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: .2em;
+    padding: 1rem;
     height: auto;
-    border-radius: 5px;
-    font-size: 1em;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    border-top: 1px solid #edeefa;
+    // border-bottom: 1px solid #f0f1f7;
+    font-size: .9em;
     color: #240229;
     transition: background-color 0.5s ease;
     transition: transform 0.2s ease;
-    background-color: rgb(242, 6, 250);
+    transition: box-shadow 0.2s ease;
 
     &:hover {
-        background-color: cyan;
-        -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05);
+        background-color: white;
+        border-radius: 5px;
+        -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        transform: scale(1.02);
+        cursor: pointer;
+        -webkit-box-shadow: 0px 19px 29px -15px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 19px 29px -15px rgba(0,0,0,0.75);
+        box-shadow: 0px 19px 29px -15px rgba(0,0,0,0.75);
     }
 }
 
 .task--done {
-    background-color: #350672;
     text-decoration: line-through;
-    color: rgba(247, 0, 255, 0.39);
+    background-color: #dfe3f7;
 
     &:hover {
-        background-color: greenyellow;
-        -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05);
+      background-color: #dfe3f7;
     }
 }
 
 .checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
     font-size: 1em;
     margin-right: 1rem;
+    border: 1px solid gray;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    transition: background-color 0.5s ease;
+
+    &:checked {
+      background: #0e6647;
+      border: none;
+    }
 }
