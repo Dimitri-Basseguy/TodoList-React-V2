@@ -11,7 +11,7 @@ export default [
   },
   {
     id: 4,
-    label: 'summon a minion',
+    label: 'Summon a minion',
     done: false,
   },
   {

@@ -30,20 +30,23 @@ const App = () => {
   const date = new Date();
 
   return (
-    <div className="todo">
-      <header className="bg-header">
-        <h1>Liste de tâches</h1>
-        <p className="bg-header__date">{`${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`}</p>
-        <Counter nbTasks={nbTasksNotDone} />
-      </header>
-      <div className="container">
-        <Form addTask={addTask} />
-        <Tasks tasks={initialTasks} />
+    <div>
+      <img src="https://img.icons8.com/clouds/2x/todo-list.png" alt="logo" />
+      <div className="todo">
+        <header className="bg-header">
+          <h1>Liste de tâches</h1>
+          <p className="bg-header__date">{`${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`}</p>
+          <Counter nbTasks={nbTasksNotDone} />
+        </header>
+        <div className="container">
+          <Form addTask={addTask} />
+          <Tasks tasks={initialTasks} />
+        </div>
+        <footer className="footer">
+          <img src="https://dimitri-basseguy.github.io/assets/img/portrait-web.jpg" alt="me" />
+          <p>Made by <a href="https://dimitri-basseguy.github.io" target="_blank" rel="noopener noreferrer">Dimitri Basseguy</a></p>
+        </footer>
       </div>
-      <footer className="footer">
-        <img src="https://dimitri-basseguy.github.io/assets/img/portrait-web.jpg" alt="me" />
-        <p>Made by <a href="https://dimitri-basseguy.github.io" target="_blank" rel="noopener noreferrer">Dimitri Basseguy</a></p>
-      </footer>
     </div>
   );
 };
