@@ -13,7 +13,7 @@ const Form = ({ addTask, value, setValue }) => {
     // console.log(event.target.childNodes[0].value);
     // le composant est controlé, à tout moment le state de App connait la valeur de l'input
     // (state) donc pas besoin d'envoyer d'infos supplémentaire ay submit
-    // addTask();
+    addTask();
   };
 
   return (
