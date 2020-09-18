@@ -1,10 +1,6 @@
-# Todolist en React
+# Todolist React
 
-On a déjà créé une todolist en Vanilla JS.  
-Voyons ce que ça donne, en React cette fois-ci :smiley:
-
-Refaire la todolist du premier challenge !  
-Même design, mêmes fonctionnalités, méthode différente.
+Simple App
 
 ![todolist](resultat.jpeg)
 
