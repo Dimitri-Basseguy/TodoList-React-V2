@@ -8,7 +8,6 @@ import Tasks from 'src/components/Tasks';
 
 // import des données
 import initialTasks from 'src/data/tasks';
-import tasks from '../../data/tasks';
 
 import './app.scss';
 
@@ -57,19 +56,38 @@ class App extends React.Component {
     });
   }
 
+  updateTask = (id, newValue) => {
+    const { tasks } = this.state;
+
+    // nouveau tableau, dans lequel on remplace une tâche
+    const newTasks = tasks.map((task) => {
+      if (task.id === id) {
+        return {
+          ...task,
+          done: newValue,
+        };
+      }
+      return task;
+    });
+
+    this.setState({
+      tasks: newTasks,
+    });
+  }
+
   render() {
     // renommer le state.newTaskValue
     const { newTaskValue: inputValue, tasks } = this.state;
 
     // on crée un tableau avec seulement les tâches non terminées
-    const tasksNotDone = initialTasks.filter((task) => !task.done);
+    // const tasksNotDone = initialTasks.filter((task) => !task.done);
     // On retourne true si on veut conserver l'élément, false sinon
     // return task.done === false; NOT task.done => négation
 
     // nombre de tâches non terminées
-    const nbTasksNotDone = tasksNotDone.length;
+    // const nbTasksNotDone = tasksNotDone.length;
     // Version racourcie
-    // const nbTasksNotDone = initialTasks.filter((task) => !task.done).length;
+    const nbTasksNotDone = tasks.filter((task) => !task.done).length;
 
     const date = new Date();
     return (
@@ -83,7 +101,7 @@ class App extends React.Component {
           </header>
           <div className="container">
             <Form addTask={this.addTask} value={inputValue} setValue={this.setTaskValue} />
-            <Tasks tasks={tasks} />
+            <Tasks tasks={tasks} setDone={this.updateTask} />
           </div>
         </div>
         <footer className="footer">

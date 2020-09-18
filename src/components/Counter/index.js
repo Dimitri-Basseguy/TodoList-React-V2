@@ -2,7 +2,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// == Import
 import './counter.scss';
 
 const Counter = ({ nbTasks }) => {

@@ -7,7 +7,7 @@ import Task from './Task';
 import './tasks.scss';
 
 // == Composant
-const Tasks = ({ tasks }) => (
+const Tasks = ({ tasks, setDone }) => (
   <ul>
     {tasks.map((task) => (
       <Task
@@ -15,6 +15,7 @@ const Tasks = ({ tasks }) => (
         // enveloppe -> déverse toutes les données de la task
         // si nouveau éléments les ajouter dans task.js !
         {...task}
+        setDone={setDone}
       />
     ))}
   </ul>
@@ -28,6 +29,7 @@ Tasks.propTypes = {
       id: PropTypes.number.isRequired,
     }).isRequired,
   ).isRequired,
+  setDone: PropTypes.func.isRequired,
 };
 
 export default Tasks;
