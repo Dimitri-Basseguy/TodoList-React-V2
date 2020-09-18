@@ -6,7 +6,7 @@ Voyons ce que ça donne, en React cette fois-ci :smiley:
 Refaire la todolist du premier challenge !  
 Même design, mêmes fonctionnalités, méthode différente.
 
-![todolist](resultat.png)
+![todolist](resultat.jpeg)
 
 ## Objectifs
 
@@ -26,7 +26,7 @@ State
 - Créer un composant contrôlé pour le champ
 - Ajouter une nouvelle tâche (attention à ne pas "modifier" le state mais à le remplacer ;) )
 
-## BONUS
+## BONUS (not done)
 
 - Gérer le cas : cocher une tâche
 - Ordonner les tâches
