@@ -105,7 +105,7 @@ class App extends React.Component {
           </div>
         </div>
         <footer className="footer">
-          <img src="https://dimitri-basseguy.github.io/assets/img/portrait-web.jpg" alt="me" />
+          <img src="https://opengameart.org/sites/default/files/forum-attachments/giphy.gif" alt="me" />
           <p>Made by <a href="https://dimitri-basseguy.github.io" target="_blank" rel="noopener noreferrer">Dimitri Basseguy</a></p>
         </footer>
       </div>
