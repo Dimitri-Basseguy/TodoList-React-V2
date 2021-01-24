@@ -1,6 +1,6 @@
 {
   "name": "todo-list-react",
-  "homepage": "https://www.dimitri-basseguy.fr/todolist",
+  "homepage": "https://www.dimitri-basseguy.fr/TodoList-React-V2/",
   "version": "1.0.0",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config config/webpack.dev.js",
